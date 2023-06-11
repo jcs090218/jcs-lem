@@ -1,9 +1,13 @@
-(defpackage #:lem-jcs-init
+(defpackage #:jcs
             (:use #:cl #:lem))
 
-(in-package :lem-jcs-init)
+(in-package :jcs)
 
 (lem:load-theme "emacs-dark")
+
+;; Find Files
+(define-key *global-keymap* "M-f" 'find-file)
+(define-key *global-keymap* "M-F" 'find-file-other-window)
 
 ;; Navigation
 (define-key *global-keymap* "M-w" 'other-window)
