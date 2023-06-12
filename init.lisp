@@ -8,6 +8,9 @@
 ;; Buffers
 (define-key *global-keymap* "M-r" 'revert-buffer)
 
+;; File editing
+(define-key *global-keymap* "M-k" 'kill-buffer)
+
 ;; Find Files
 (define-key *global-keymap* "M-f" 'find-file)
 (define-key *global-keymap* "M-F" 'find-file-other-window)
@@ -35,6 +38,9 @@
 
 ;; Goto Thing
 (define-key *global-keymap* "M-g l" 'goto-line)
+
+;; Help
+(define-key *global-keymap* "C-k C-s" 'describe-bindings)
 
 ;; Undo
 (define-key *global-keymap* "C-z" 'undo)
