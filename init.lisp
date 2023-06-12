@@ -33,12 +33,18 @@
 (define-key *global-keymap* "C-e e" 'lisp-eval-expression)
 (define-key *global-keymap* "C-e r" 'lisp-eval-region)
 
+;; Goto Thing
+(define-key *global-keymap* "M-g l" 'goto-line)
+
 ;; Undo
 (define-key *global-keymap* "C-z" 'undo)
 (define-key *global-keymap* "C-y" 'redo)
 
-;; Goto Thing
-(define-key *global-keymap* "M-g l" 'goto-line)
+;; Read-Only
+(define-key *global-keymap* "C-r o" 'toggle-read-only)
+
+;; Rename-file
+(define-key *global-keymap* "M-F2" 'rename-buffer)
 
 ;; Word Case
 (define-key *global-keymap* "C-M-u" 'uppercase-word)
