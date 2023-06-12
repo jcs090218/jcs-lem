@@ -50,6 +50,11 @@
 ;; Rename-file
 (define-key *global-keymap* "M-F2" 'rename-buffer)
 
+;; Window
+(define-key *global-keymap* "C-F4" 'delete-active-window)
+(define-key *global-keymap* "C-\\" 'split-active-window-horizontally)
+(define-key *global-keymap* "C-|" 'split-active-window-vertically)
+
 ;; Word Case
 (define-key *global-keymap* "C-M-u" 'uppercase-word)
 (define-key *global-keymap* "C-M-d" 'lowercase-word)
