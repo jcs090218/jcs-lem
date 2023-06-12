@@ -17,9 +17,12 @@
 (define-key *global-keymap* "C-End" 'move-to-end-of-buffer)
 
 ;; Edit
+(define-key *global-keymap* "C-d" 'kill-whole-line)
 (define-key *global-keymap* "C-x" 'kill-region)
 (define-key *global-keymap* "C-c" 'copy-region)
 (define-key *global-keymap* "C-v" 'yank)
+
+(define-key *global-keymap* "C-s" 'save-current-buffer)
 
 ;; Eval
 (define-key *global-keymap* "C-e b" 'lisp-eval-buffer)
