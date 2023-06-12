@@ -5,6 +5,9 @@
 
 (lem:load-theme "emacs-dark")
 
+;; Buffers
+(define-key *global-keymap* "M-r" 'revert-buffer)
+
 ;; Find Files
 (define-key *global-keymap* "M-f" 'find-file)
 (define-key *global-keymap* "M-F" 'find-file-other-window)
@@ -33,3 +36,11 @@
 ;; Undo
 (define-key *global-keymap* "C-z" 'undo)
 (define-key *global-keymap* "C-y" 'redo)
+
+;; Goto Thing
+(define-key *global-keymap* "M-g l" 'goto-line)
+
+;; Word Case
+(define-key *global-keymap* "C-M-u" 'uppercase-word)
+(define-key *global-keymap* "C-M-d" 'lowercase-word)
+(define-key *global-keymap* "C-M-c" 'capitalize-word)
