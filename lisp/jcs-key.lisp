@@ -1,3 +1,5 @@
+#| # Global Key Definition |#
+
 (defpackage :jcs-key
   (:use #:cl #:lem))
 
