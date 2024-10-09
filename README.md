@@ -8,10 +8,14 @@
 
 # jcs-lem
 
-My personal configuration for [lem](https://github.com/lem-project/lem).
+> Lem configuration works across all OSs
 
 ## 💾 Quick install
 
 ```
 git clone https://github.com/jcs090218/jcs-lem ~/.lem
 ```
+
+<!-- Links -->
+
+[Lem]: https://github.com/lem-project/lem
