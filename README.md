@@ -2,7 +2,7 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shinmera/lem-icon/gh-pages/icon-blue.svg">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shinmera/lem-icon/gh-pages/icon-blue.svg">
-  <img width="25%" src="">
+  <img width="20%" src="">
 </picture>
 </p>
 
