@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        lem-version:
+          - 2.1.0
+        experimental: [false]
+        include:
+          - os: ubuntu-latest
+            lem-version: snapshot
+            experimental: true
+          - os: macos-latest
+            lem-version: snapshot
+            experimental: true
+          - os: windows-latest
+            lem-version: snapshot
+            experimental: true
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: lem-project/setup-lem@master
+      with:
+        version: ${{ matrix.lem-version }}
+
+    - name: Run tests
+      run:
+        echo test
