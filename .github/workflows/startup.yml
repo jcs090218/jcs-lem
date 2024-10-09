@@ -1,4 +1,4 @@
-name: CI
+name: Startup
 
 on:
   push:
@@ -34,12 +34,19 @@ jobs:
             experimental: true
 
     steps:
-    - uses: actions/checkout@v4
-
     - uses: lem-project/setup-lem@master
       with:
         version: ${{ matrix.lem-version }}
 
-    - name: Run tests
-      run:
-        echo test
+    - uses: actions/checkout@v4
+
+    - name: Copy configuration files
+      run: |
+        chmod -R 777 ./
+        make copy_config
+
+    - name: Test startup
+      run: make startup
+
+    - name: Test startup
+      run: make startup
