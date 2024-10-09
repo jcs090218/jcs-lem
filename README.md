@@ -28,7 +28,7 @@
 
 > Lem configuration works across all OSs
 
-[![CI](https://github.com/jcs090218/jcs-lem/actions/workflows/test.yml/badge.svg)](https://github.com/jcs090218/jcs-lem/actions/workflows/test.yml)
+[![Startup](https://github.com/jcs090218/jcs-lem/actions/workflows/startup.yml/badge.svg)](https://github.com/jcs090218/jcs-lem/actions/workflows/startup.yml)
 
 ## 💾 Quick install
 
