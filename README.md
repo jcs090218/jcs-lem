@@ -28,6 +28,8 @@
 
 > Lem configuration works across all OSs
 
+[![CI](https://github.com/jcs090218/jcs-lem/actions/workflows/test.yml/badge.svg)](https://github.com/jcs090218/jcs-lem/actions/workflows/test.yml)
+
 ## 💾 Quick install
 
 ```
