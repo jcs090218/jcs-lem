@@ -8,4 +8,4 @@ copy_config:
 
 startup:
 	@echo "Startup testing..."
-	$(LEM) -q --batch -l "./test/startup/test-startup.el"
+	$(LEM) -batch "./test/startup/test-startup.lisp"
