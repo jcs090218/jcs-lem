@@ -38,7 +38,7 @@ jobs:
       with:
         version: ${{ matrix.lem-version }}
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Copy configuration files
       run: |
